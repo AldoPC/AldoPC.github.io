@@ -1,0 +1,28 @@
+@media (min-width: 768px) {
+  .about-me {
+    height: -webkit-fill-available;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .about-me {
+    height: auto;
+    position: initial;
+  }
+  .container{
+      width: auto;
+  }
+}
+ body{
+     background-color: #F8F9FA;
+ }
+
+ canvas {
+    display: block;
+    margin: auto;
+  }
+
+  #wave{
+      width: 100%;
+      height: 303px;
+  }
