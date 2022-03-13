@@ -2,13 +2,16 @@
   "name": "aldoponce-homepage",
   "version": "1.0.0",
   "description": "Aldo's homepage",
+  "homepage": "https://aldopc.github.io",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
-    "prettier": "prettier -write .",
-    "lint": "next lint",
+    "start": "next start",
     "export": "next export && touch out/.nojekyll",
-    "deploy": "gh-pages -d out -t true"
+    "build-ssg": "next build && next export && touch out/.nojekyll",
+    "deploy": "gh-pages -d out -t true",
+    "prettier": "prettier -write .",
+    "lint": "next lint"
   },
   "keywords": [],
   "author": "Aldo Ponce",
@@ -30,6 +33,7 @@
   "devDependencies": {
     "@types/react-pdf": "^5.0.9",
     "eslint-config-next": "^12.1.0",
+    "gh-pages": "^3.2.3",
     "prettier": "^2.5.1"
   }
 }
