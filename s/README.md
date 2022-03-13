@@ -1,2 +1,0 @@
-# AldoPonce-homepage
-My homepage
