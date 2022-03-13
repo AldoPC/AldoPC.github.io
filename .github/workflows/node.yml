@@ -27,7 +27,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Install and Build 🔧
-        run: npm && npm build && npm export
+        run: next build && next export && touch out/.nojekyll
 
       - name: Deploy 🚀
         uses: AldoPC/github-pages-deploy-action@3.7.1
